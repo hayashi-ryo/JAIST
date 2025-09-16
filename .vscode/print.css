@@ -1,0 +1,12 @@
+html, body {
+  font-family:
+    "Noto Sans CJK JP", "Noto Sans JP",
+    "Yu Gothic Medium", "Hiragino Kaku Gothic ProN",
+    "Meiryo", "MS PGothic", sans-serif;
+  line-height: 1.6;
+}
+code, pre {
+  font-family:
+    "Noto Sans Mono CJK JP", "Noto Sans Mono",
+    ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}

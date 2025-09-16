@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "md→pdf（Pandoc + wkhtmltopdf）",
+      "type": "shell",
+      "command": "pandoc",
+      "args": [
+        "${file}",
+        "-o", "${fileDirname}/${fileBasenameNoExtension}.pdf",
+        "--pdf-engine=wkhtmltopdf",
+        "--css", "${workspaceFolder}/.vscode/print.css",
+        "-V", "margin-top=20mm",
+        "-V", "margin-bottom=20mm",
+        "-V", "margin-left=18mm",
+        "-V", "margin-right=18mm"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
